@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Mariner",
+      "image": "assets/images/h1.jpg",
+      "button_text": "Dedicated to our seafarers"
+    },
+    {
+      "id": 2,
+      "name": "Al Maha Services",
+      "image": "assets/images/h2.jpg",
+      "button_text": "Book award-winning service"
+    },
+    {
+      "id": 3,
+      "name": "The Oryx",
+      "image": "assets/images/h3.jpg",
+      "button_text": "Purchase lounge access"
+    }
+  ]
