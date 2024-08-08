@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-col class="ion-margin">
+    <ion-col class="ion-margin-horizontal">
+      <h2 style="padding-inline: 30px;">Relax and rejuvenate before your journey</h2>
+      <p style="padding-inline: 30px;">Combining Comfortable design and award winning service, our lounges will immerse
+        you iun world class experience.</p>
+      <div>
+        <ion-grid>
+          <ion-row>
+            <div *ngFor="let item of data">
+              <ion-col>
+                <ion-card (click)="onCardClick(item.id)">
+                  <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true , loop: true }">
+                    <ion-slide>
+                      <ion-img [src]="item.image" class="card-image"></ion-img>
+                    </ion-slide>
+                  </ion-slides>
+                  <ion-card-header>
+                    <ion-card-title>{{item.name}} Lounge</ion-card-title> 
+                  </ion-card-header>
+                  <ion-card-content>
+                    {{item.button_text}}
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+            </div>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-col>
+  </ion-col>
