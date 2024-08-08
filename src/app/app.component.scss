@@ -1,0 +1,25 @@
+.card-image {
+    width: 300px;
+    height: 200px;
+    /* Adjust height as needed */
+    object-fit: cover;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .scrollable {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+}
+
+.ion-card {
+    overflow-x: scroll;
+
+}
